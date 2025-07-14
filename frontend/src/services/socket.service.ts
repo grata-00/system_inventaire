@@ -56,6 +56,7 @@ class SocketService {
 }
 
 const URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001';
+
 export const socketService = new SocketService();
 
 socketService.connect(URL).catch(error => console.error('Socket connection error:', error));
